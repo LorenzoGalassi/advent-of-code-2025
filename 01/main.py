@@ -1,4 +1,5 @@
 from utils import get_sequences_from_file, clean_zero_hits, total_zero_hits
+from test import test_smaller_input
 import time
 
 
@@ -15,6 +16,8 @@ def main() -> None:
 
 if __name__ == "__main__":
     start = time.perf_counter()
+    test_smaller_input()
+    print("Test passed!")
     main()
     end = time.perf_counter()
     elapsed_ms = (end - start) * 1000
