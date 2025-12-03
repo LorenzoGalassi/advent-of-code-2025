@@ -18,7 +18,7 @@ def main() -> None:
     print(
         f"Max voltage part 1: {total_voltage_part_1}\nMax voltage part 2: {total_voltage_part_2}"
     )
-    return sum
+    return total_voltage_part_1, total_voltage_part_2
 
 
 if __name__ == "__main__":
