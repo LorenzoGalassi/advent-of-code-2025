@@ -3,6 +3,7 @@ from utils import (
     sum_invalid_ids_part_one,
     sum_invalid_ids_part_two,
 )
+from test import test_smaller_input
 import time
 
 
@@ -18,6 +19,8 @@ def main() -> None:
 
 if __name__ == "__main__":
     start = time.perf_counter()
+    test_smaller_input()
+    print("Test passed!")
     main()
     end = time.perf_counter()
     elapsed_ms = (end - start) * 1000
